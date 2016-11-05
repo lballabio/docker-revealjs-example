@@ -12,6 +12,7 @@ dev: build
 	echo $(shell pwd)
 	@docker run -it --rm \
 		-p 8000:8000 \
+		-v "$(shell pwd)"/index.html:/revealjs/index.html \
 		-v "$(shell pwd)"/slides.md:/revealjs/md/slides.md \
 		-v "$(shell pwd)"/images:/revealjs/images \
 		-v "$(shell pwd)"/custom.css:/revealjs/css/custom.css \
