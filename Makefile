@@ -1,23 +1,21 @@
 .PHONY: build slides shell
 
 build:
-	@docker build --rm -t fschl/revealjs:presentation .
+	@docker build --rm -t lballabio/revealjs:test .
 
-slides:
-	@docker build --rm -t fschl/revealjs:presentation .
+slides: build
 	@docker run -it --rm \
 		-p 8000:8000 \
-		fschl/revealjs:presentation
+		lballabio/revealjs:test
 
-dev:
-	@docker build --rm -t fschl/revealjs:presentation .
+dev: build
 	echo $(shell pwd)
 	@docker run -it --rm \
 		-p 8000:8000 \
 		-v "$(shell pwd)"/slides.md:/revealjs/md/slides.md \
 		-v "$(shell pwd)"/images:/revealjs/images \
 		-v "$(shell pwd)"/custom.css:/revealjs/css/custom.css \
-		fschl/revealjs:presentation
+		lballabio/revealjs:test
 
 shell:
 	@docker run -it --rm \
