@@ -1,0 +1,52 @@
+
+.reveal {
+  font-family: "Rambla", sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: #6b0013;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.reveal h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.reveal h2 {
+  font-size: 1.5em;
+}
+
+.reveal h3 {
+  font-size: 1.2em;
+}
+
+.reveal pre {
+  width: 100%;
+  margin: 0px auto;
+  font-size: 0.6em;
+  font-family: Source Code Pro;
+  word-wrap: break-word;
+  box-shadow: none;
+}
+
+.reveal code {
+  font-family: Source Code Pro;
+}
+
+.reveal pre code {
+  max-height: 600px;
+}
+
+
+.reveal section img {
+  border: none;
+  box-shadow: none;
+}
