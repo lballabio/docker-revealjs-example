@@ -1,6 +1,7 @@
 
 .reveal {
-  font-family: "Rambla", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
 }
 
 .reveal h1,
@@ -9,9 +10,9 @@
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  color: #6b0013;
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: bold;
+  color: #fa9614;
+  font-family: "Open Sans";
+  font-weight: 800;
   text-transform: none;
 }
 
@@ -26,6 +27,10 @@
 
 .reveal h3 {
   font-size: 1.2em;
+}
+
+strong {
+  color: #fa9614;
 }
 
 .reveal pre {
