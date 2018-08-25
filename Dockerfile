@@ -1,3 +1,3 @@
 FROM lballabio/revealjs:onbuild
 
-ADD *.css /revealjs/css/
+ADD css/*.css /revealjs/css/
