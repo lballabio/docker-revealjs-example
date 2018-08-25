@@ -1,0 +1,17 @@
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  color: #B54B04;
+}
+
+strong {
+  color: #B54B04;
+}
+
+.reveal a {
+  color: #2A76DD;
+}
